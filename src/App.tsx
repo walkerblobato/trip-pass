@@ -1,7 +1,13 @@
+import { ThemeProvider } from '@emotion/react';
+import { Main } from './pages/PassaportForms';
+
+import { LightTheme } from './shared/themes';
+
+
 export const App = () => {
   return (
-    <div>
-      TRIP PASS
-    </div>
+    <ThemeProvider theme={LightTheme}>
+      <Main />
+    </ThemeProvider>
   );
 };
