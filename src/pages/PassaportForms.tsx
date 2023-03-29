@@ -2,7 +2,7 @@ import { Button, Box} from '@mui/material';
 import { Form } from '@unform/web';
 
 import { LayoutForms, LayoutPage } from '../shared/layouts';
-import { Header, PersonalData } from '../shared/components';
+import { Header, PersonalData, PersonalDocuments } from '../shared/components';
 
 export const Main= () => {
   return (
@@ -10,8 +10,10 @@ export const Main= () => {
       <Header />
       <Box>
         <Form onSubmit={(dados) => console.log(dados)}>
-          <PersonalData />
 
+          <PersonalData />
+          <PersonalDocuments />
+          
           <Box display='flex' justifyContent='center'>
             <Button
               variant='contained'
@@ -25,6 +27,7 @@ export const Main= () => {
               Baixar PDF
             </Button>
           </Box>
+
         </Form>
       </Box>
     </LayoutPage>

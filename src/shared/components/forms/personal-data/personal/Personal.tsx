@@ -1,7 +1,8 @@
 import { Box, Grid, MenuItem, Typography } from '@mui/material';
+
 import { VTextField, VDateField, VCheckbox } from '../../../../forms';
 import { EnvironmentForms } from '../../../../environment/forms';
-import { EnvironmentPlaces } from '../../../../environment/countries';
+import { EnvironmentPlaces } from '../../../../environment/places';
 
 
 export const Personal = () => {
@@ -11,7 +12,7 @@ export const Personal = () => {
       <Typography variant='h5' paddingBottom={3}>Dados Pessoais</Typography>
 
       <Box paddingBottom={2}>
-        <Grid container spacing={1}>
+        <Grid container spacing={2}>
 
           <Grid item xs={9}>
             <VTextField
@@ -41,7 +42,7 @@ export const Personal = () => {
 
       <Box paddingBottom={2}>
         <Grid container spacing={2}>
-          
+
           <Grid item xs={9}>
             <VTextField
               fullWidth
@@ -102,17 +103,17 @@ export const Personal = () => {
 
           <Grid item xs={5}>
             <VDateField
-              label="Data de nascimento"
-              format="DD-MM-YYYY"
+              label='Data de nascimento'
+              format='DD-MM-YYYY'
             />
           </Grid>
 
           <Grid item xs={3}>
-            <VCheckbox label="Emancipado" />
+            <VCheckbox label='Emancipado' />
           </Grid>
 
           <Grid item xs={4}>
-            <VCheckbox label="Adoção Internacional" />
+            <VCheckbox label='Adoção Internacional' />
           </Grid>
 
         </Grid>
@@ -122,7 +123,7 @@ export const Personal = () => {
         <Grid container spacing={8}>
 
           <Grid item xs={6}>
-            <VTextField 
+            <VTextField
               select
               fullWidth
               label='Raça ou cor'
@@ -137,7 +138,7 @@ export const Personal = () => {
           </Grid>
 
           <Grid item xs={6}>
-            <VTextField 
+            <VTextField
               select
               fullWidth
               label='Estado Civil'
@@ -151,13 +152,13 @@ export const Personal = () => {
             </VTextField>
           </Grid>
 
-        </Grid>       
+        </Grid>
       </Box>
       <Box paddingBottom={1}>
         <Grid container spacing={8}>
 
           <Grid item xs={6}>
-            <VTextField 
+            <VTextField
               select
               fullWidth
               label='Nacionalidade'
@@ -175,7 +176,7 @@ export const Personal = () => {
             <Typography variant='body2'>(Para brasileiros com múltipla nacionalidade, selecionar Brasil)</Typography>
           </Grid>
 
-        </Grid>       
+        </Grid>
       </Box>
     </>
   );

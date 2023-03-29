@@ -1,6 +1,6 @@
 import { Grid, Typography, Box, MenuItem } from '@mui/material';
 import { VTextField } from '../../../../forms';
-import { EnvironmentPlaces } from '../../../../environment/countries';
+import { EnvironmentPlaces } from '../../../../environment/places';
 
 
 export const Birthplace = () => {
@@ -13,7 +13,7 @@ export const Birthplace = () => {
         <Grid container spacing={2}>
 
           <Grid item xs={8}>
-            <VTextField 
+            <VTextField
               select
               fullWidth
               label='País'
@@ -30,7 +30,7 @@ export const Birthplace = () => {
           <Grid item xs={4}>
             <VTextField
               label='CEP'
-              name='CEP' 
+              name='CEP'
             />
           </Grid>
 
@@ -41,7 +41,7 @@ export const Birthplace = () => {
         <Grid container spacing={2}>
 
           <Grid item xs={8}>
-            <VTextField 
+            <VTextField
               fullWidth
               label='Cidade'
               name='Cidade'
@@ -49,7 +49,7 @@ export const Birthplace = () => {
           </Grid>
 
           <Grid item xs={4}>
-            <VTextField 
+            <VTextField
               label='UF'
               name='UF'
             />
