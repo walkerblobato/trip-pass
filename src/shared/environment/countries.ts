@@ -2,7 +2,7 @@ export const EnvironmentPlaces = {
   CHOOSE_CONTRIES: [
     {
       label: 'Afeganistão',
-      value: 'AFG',
+      value: 'Afeganistão',
     },
     {
       label: 'Ilhas Åland',

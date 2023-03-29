@@ -8,7 +8,7 @@ export const Personal = () => {
 
   return (
     <>
-      <Typography variant='h5' paddingBottom={2}>Dados Pessoais</Typography>
+      <Typography variant='h5' paddingBottom={3}>Dados Pessoais</Typography>
 
       <Box paddingBottom={2}>
         <Grid container spacing={1}>
@@ -29,7 +29,7 @@ export const Personal = () => {
               name='Sexo'
             >
               {EnvironmentForms.CHOOSE_GENDER.map((option) => (
-                <MenuItem key={option.value} value={option.value}>
+                <MenuItem key={option.value} value={option.label}>
                   {option.label}
                 </MenuItem>
               ))}
@@ -40,7 +40,7 @@ export const Personal = () => {
       </Box>
 
       <Box paddingBottom={2}>
-        <Grid container spacing={1}>
+        <Grid container spacing={2}>
           
           <Grid item xs={9}>
             <VTextField
@@ -55,7 +55,7 @@ export const Personal = () => {
               select
               fullWidth
               label='Sexo'
-              name='Sexo'
+              name='SexoF1'
             >
               {EnvironmentForms.CHOOSE_GENDER.map((option) => (
                 <MenuItem key={option.value} value={option.value}>
@@ -69,7 +69,7 @@ export const Personal = () => {
       </Box>
 
       <Box paddingBottom={2}>
-        <Grid container spacing={1}>
+        <Grid container spacing={2}>
 
           <Grid item xs={9}>
             <VTextField
@@ -84,7 +84,7 @@ export const Personal = () => {
               select
               fullWidth
               label='Sexo'
-              name='Sexo'
+              name='SexoF2'
             >
               {EnvironmentForms.CHOOSE_GENDER.map((option) => (
                 <MenuItem key={option.value} value={option.value}>
@@ -98,7 +98,7 @@ export const Personal = () => {
       </Box>
 
       <Box paddingBottom={2}>
-        <Grid container spacing={1}>
+        <Grid container spacing={2}>
 
           <Grid item xs={5}>
             <VDateField
@@ -125,8 +125,8 @@ export const Personal = () => {
             <VTextField 
               select
               fullWidth
-              name='Raça ou cor'
               label='Raça ou cor'
+              name='RaçaOuCor'
             >
               {EnvironmentForms.CHOOSE_RACE_OR_COLOR.map(option => (
                 <MenuItem key={option.value} value={option.value}>
@@ -140,8 +140,8 @@ export const Personal = () => {
             <VTextField 
               select
               fullWidth
-              name='Raça ou cor'
-              label='Raça ou cor'
+              label='Estado Civil'
+              name='EstadoCivil'
             >
               {EnvironmentForms.MARITAL_STATUS.map(option => (
                 <MenuItem key={option.value} value={option.value}>
@@ -160,8 +160,8 @@ export const Personal = () => {
             <VTextField 
               select
               fullWidth
-              name='Nacionalidade'
               label='Nacionalidade'
+              name='Nacionalidade'
             >
               {EnvironmentPlaces.CHOOSE_CONTRIES.map(option => (
                 <MenuItem key={option.value} value={option.value}>

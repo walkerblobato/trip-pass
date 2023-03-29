@@ -64,5 +64,19 @@ export const EnvironmentForms = {
       value: 'UNIÃO ESTÁVEL',
       label: 'União Estável',
     },
+  ],
+  REASON_NAME_CHANGE: [
+    {
+      value: 'ALTERAÇÃO POR MUDANÇA DE ESTADO CIVIL',
+      label: 'Alteração por Mudança de Estado Civil'
+    },
+    {
+      value: 'ALTERAÇÃO POR DECISÃO JUDICIAL',
+      label: 'Alteração por Decisão Judicial'
+    },
+    {
+      value: 'ALTERAÇÃO POR REGISTRO EM CARTÓRIO - PROVIMENTO 73/2018 CNJ',
+      label: 'Alteração por registro em Cartório - Provimento 73/2018 Cnj'
+    },
   ]
 };

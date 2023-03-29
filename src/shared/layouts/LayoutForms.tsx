@@ -7,9 +7,8 @@ interface ILayoutFormsProps {
 export const LayoutForms: React.FC<ILayoutFormsProps> = ({ children }) => {
   return (
     <Box
-      width={800}
-      height={500}
       padding={3}
+      margin={5}
       sx={{
         backgroundColor:'#F7F7F7'
       }}

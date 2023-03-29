@@ -1,16 +1,15 @@
 import { Button, Box} from '@mui/material';
 import { Form } from '@unform/web';
 
-import { LayoutPage } from '../shared/layouts';
+import { LayoutForms, LayoutPage } from '../shared/layouts';
 import { Header, PersonalData } from '../shared/components';
 
 export const Main= () => {
   return (
     <LayoutPage>
       <Header />
-      <Box margin={5}>
+      <Box>
         <Form onSubmit={(dados) => console.log(dados)}>
-
           <PersonalData />
 
           <Box display='flex' justifyContent='center'>
