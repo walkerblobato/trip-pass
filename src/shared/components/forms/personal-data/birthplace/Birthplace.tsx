@@ -7,7 +7,7 @@ export const Birthplace = () => {
 
   return (
     <>
-      <Typography variant='h5' paddingBottom={3} paddingTop={3}>Local de Nascimento</Typography>
+      <Typography variant='h5' paddingBottom={3}>Local de Nascimento</Typography>
 
       <Box paddingBottom={2}>
         <Grid container spacing={2}>
@@ -37,7 +37,7 @@ export const Birthplace = () => {
         </Grid>
       </Box>
 
-      <Box>
+      <Box paddingBottom={3}>
         <Grid container spacing={2}>
 
           <Grid item xs={8}>

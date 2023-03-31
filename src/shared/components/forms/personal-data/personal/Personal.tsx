@@ -154,7 +154,7 @@ export const Personal = () => {
 
         </Grid>
       </Box>
-      <Box paddingBottom={1}>
+      <Box paddingBottom={3}>
         <Grid container spacing={8}>
 
           <Grid item xs={6}>

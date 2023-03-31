@@ -1,12 +1,16 @@
 import { Box, Grid, MenuItem, Typography } from '@mui/material';
 import { VDateField, VTextField } from '../../../../forms';
 import { EnvironmentPlaces } from '../../../../environment/places';
+import { InformationButton } from '../../components/InformationButton';
 
 
 export const Identification = () => {
   return (
     <>
-      <Typography variant='h5' paddingBottom={3}>Documento de Identificação</Typography>
+      <Box display='flex' paddingBottom={3}>
+        <Typography variant='h5' paddingRight={1}>Documento de Identificação</Typography>
+        <InformationButton />
+      </Box>
 
       <Box paddingBottom={2}>
         <Grid container spacing={2}>
@@ -29,7 +33,7 @@ export const Identification = () => {
         </Grid>
       </Box>
 
-      <Box paddingBottom={2}>
+      <Box paddingBottom={3}>
         <Grid container spacing={2}>
 
           <Grid item xs={8}>

@@ -9,8 +9,8 @@ export const PreviousNames = () => {
   
   return (
     <>
-      <Box display='flex' paddingBottom={2} paddingTop={3} sx={{position: 'relative'}}>
-        <Typography variant='h5' paddingRight={1}>Nomes anterioes</Typography>
+      <Box display='flex' paddingBottom={2}>
+        <Typography variant='h5' paddingRight={1}>Nomes Anteriores</Typography>
         <InformationButton />
       </Box>
 
@@ -30,7 +30,7 @@ export const PreviousNames = () => {
         </Grid>
       </Box>
 
-      <Box paddingBottom={2}>
+      <Box >
         <Grid container spacing={2}>
           
           <Grid item xs={8}>
@@ -40,7 +40,7 @@ export const PreviousNames = () => {
               label='Motivo da mudança'
               name='MotivoMudança'
             >
-              {EnvironmentForms.REASON_NAME_CHANGE.map(reason => (
+              {EnvironmentForms.REASONS_NAME_CHANGE.map(reason => (
                 <MenuItem key={reason.value} value={reason.value}>
                   {reason.label}
                 </MenuItem>

@@ -19,7 +19,7 @@ export const EnvironmentForms = {
       label: 'Branca',
     },
     {
-      value: 'INDÍGENA',
+      value: 'INDIGENA',
       label: 'Indígina',
     },
     {
@@ -35,7 +35,7 @@ export const EnvironmentForms = {
       label: 'Outras',
     },
     {
-      value: 'NÃO DESEJO DECLARAR',
+      value: 'NAO DESEJO DECLARAR',
       label: 'Não Desejo Declarar',
     },
   ],
@@ -49,7 +49,7 @@ export const EnvironmentForms = {
       label: 'Casada(a)',
     },
     {
-      value: 'VIÚVO(A)',
+      value: 'VIUVO(A)',
       label: 'Viúvo(a)',
     },
     {
@@ -61,22 +61,63 @@ export const EnvironmentForms = {
       label: 'Divorciado(a)',
     },
     {
-      value: 'UNIÃO ESTÁVEL',
+      value: 'UNIAO ESTAVEL',
       label: 'União Estável',
     },
   ],
-  REASON_NAME_CHANGE: [
+  REASONS_NAME_CHANGE: [
     {
-      value: 'ALTERAÇÃO POR MUDANÇA DE ESTADO CIVIL',
+      value: 'ALTERACAO POR MUDANÇA DE ESTADO CIVIL',
       label: 'Alteração por Mudança de Estado Civil'
     },
     {
-      value: 'ALTERAÇÃO POR DECISÃO JUDICIAL',
+      value: 'ALTERACAO POR DECISAO JUDICIAL',
       label: 'Alteração por Decisão Judicial'
     },
     {
-      value: 'ALTERAÇÃO POR REGISTRO EM CARTÓRIO - PROVIMENTO 73/2018 CNJ',
+      value: 'ALTERAÇÃO POR REGISTRO EM CARTORIO - PROVIMENTO 73/2018 CNJ',
       label: 'Alteração por registro em Cartório - Provimento 73/2018 Cnj'
     },
+  ],
+  TYPES_CERTIFICATE: [
+    {
+      value: 'CERTIDÃO DE NASCIMENTO',
+      label: 'Certidão de Nascimento'
+    },
+    {
+      value: 'CERTIDÃO DE CASAMENTO',
+      label: 'Certidão de Casamento'
+    },
+  ],
+  PREVIOUS_PASSPORT_SITUATIONS: [
+    {
+      value: 'NUNCA TEVE PASSAPORTE COMUM, DE EMERGENCIA, PARA ESTRANGEIRO OU LAISSEZ-PASSER BRASILEIRO',
+      label: 'Nunca teve passaporte comum, de emergência, para estrangeiro ou laissez-passer brasileiro'
+    },
+    {
+      value: 'PASSAPORT ANTERIOR VALIDO (OBRIGATORIO A APRESENTACAO)',
+      label: 'Passaporte anterior válido (obrigatória a aprensentação)'
+    },
+    {
+      value: 'EXTRAVIADO',
+      label: 'Extraviado'
+    },
+    {
+      value: 'ESTA RETIDO/APREENDIDO PELA POLICIA FEDERAL',
+      label: 'Está retido/apreendido pela policia federal'
+    },
+    {
+      value: 'ESTA RETIDO PELO MRE',
+      label: 'Está retido pelo MRE'
+    },
+    {
+      value: 'ROUBADO OU FURTADO',
+      label: 'Roubado ou furtado'
+    },
+    {
+      value: 'PASSAPORTE ANTERIOR VENCIDO (RECOMENDA-SE APRESENTACAO PARA CANCELAMENTO FISICO DO DOCUMENTO)',
+      label: 'Passaporte anterior vencido (Recomenda-se apresentação para cancelamento físico do documento)'
+    },
   ]
+
 };
