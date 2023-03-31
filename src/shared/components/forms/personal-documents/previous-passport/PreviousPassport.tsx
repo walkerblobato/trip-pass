@@ -27,7 +27,7 @@ export const PreviousPassport = () => {
         </VTextField>
       </Box>
 
-      <Box paddingBottom={2}>
+      <Box>
         <Grid container spacing={2}>
 
           <Grid item xs={3}>

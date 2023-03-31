@@ -3,6 +3,7 @@ import { Form } from '@unform/web';
 
 import { LayoutForms, LayoutPage } from '../shared/layouts';
 import { Header, PersonalData, PersonalDocuments } from '../shared/components';
+import { ComplementaryData } from '../shared/components/forms/complementary-data/ComplementaryData';
 
 export const Main= () => {
   return (
@@ -13,6 +14,7 @@ export const Main= () => {
 
           <PersonalData />
           <PersonalDocuments />
+          <ComplementaryData />
           
           <Box display='flex' justifyContent='center'>
             <Button
